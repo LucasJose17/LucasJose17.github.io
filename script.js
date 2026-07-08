@@ -11,19 +11,21 @@ const translations = {
     heroHello: "Olá, eu sou",
     heroRole1: "Estudante de",
     heroRole2: "Ciência da Computação",
-    heroRole3: "Desenvolvedor em formação",
+    heroRole3: "Técnico em Manutenção e Suporte em Informática",
+    heroRole4: "Desenvolvedor em formação",
+
     heroDescription:
-      "Estou desenvolvendo minha base em programação, desenvolvimento web e banco de dados. Meu foco é aprender na prática, criar projetos reais e evoluir como futuro profissional de tecnologia.",
+      "Sou estudante de Ciência da Computação e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Estou evoluindo na programação, desenvolvimento web e banco de dados para criar soluções digitais reais.",
 
     btnProjects: "Ver projetos",
     btnContact: "Entre em contato",
     downloadCv: "Baixar currículo",
 
     infoCourse: "Ciência da Computação",
-    infoFocus: "Foco",
-    infoFocusText: "Desenvolvimento e Lógica",
-    infoGoal: "Objetivo",
-    infoGoalText: "Evoluir, criar e impactar",
+    infoFocus: "Formação Técnica",
+    infoFocusText: "Manutenção e Suporte em Informática",
+    infoGoal: "Foco atual",
+    infoGoalText: "Web, lógica e banco de dados",
 
     metric1: "Período<br />Ciência da Computação",
     metric2: "Horas de estudo<br />dedicadas",
@@ -33,7 +35,7 @@ const translations = {
     aboutLabel: "Sobre mim",
     aboutTitle: "Mais sobre mim",
     aboutText:
-      "Sou estudante de Ciência da Computação e estou construindo minha base em programação, lógica, desenvolvimento web e banco de dados. Gosto de aprender na prática, transformar estudos em projetos e evoluir constantemente para conquistar minha primeira oportunidade na área de tecnologia.",
+      "Sou estudante de Ciência da Computação e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Essa base me ajudou a entender melhor computadores, sistemas, suporte ao usuário e resolução de problemas. Atualmente estou direcionando meus estudos para programação, desenvolvimento web, banco de dados e criação de soluções digitais.",
 
     aboutCard1Title: "Objetivo",
     aboutCard1Text:
@@ -92,19 +94,21 @@ const translations = {
     heroHello: "Hi, I am",
     heroRole1: "Student of",
     heroRole2: "Computer Science",
-    heroRole3: "Developer in progress",
+    heroRole3: "Computer Maintenance and IT Support Technician",
+    heroRole4: "Developer in progress",
+
     heroDescription:
-      "I am developing my foundation in programming, web development and databases. My focus is to learn by practicing, create real projects and grow as a future technology professional.",
+      "I am a Computer Science student with a 3-year technical background in Computer Maintenance and IT Support. I am improving my programming, web development and database skills to build real digital solutions.",
 
     btnProjects: "View projects",
     btnContact: "Contact me",
     downloadCv: "Download resume",
 
     infoCourse: "Computer Science",
-    infoFocus: "Focus",
-    infoFocusText: "Development and Logic",
-    infoGoal: "Goal",
-    infoGoalText: "Grow, create and impact",
+    infoFocus: "Technical Background",
+    infoFocusText: "Computer Maintenance and IT Support",
+    infoGoal: "Current Focus",
+    infoGoalText: "Web, logic and databases",
 
     metric1: "Semester<br />Computer Science",
     metric2: "Study hours<br />dedicated",
@@ -114,7 +118,7 @@ const translations = {
     aboutLabel: "About me",
     aboutTitle: "More about me",
     aboutText:
-      "I am a Computer Science student building my foundation in programming, logic, web development and databases. I like learning by practicing, turning studies into projects and constantly improving to get my first opportunity in technology.",
+      "I am a Computer Science student with a 3-year technical background in Computer Maintenance and IT Support. This foundation helped me understand computers, systems, user support and problem solving. I am now focusing my studies on programming, web development, databases and digital solutions.",
 
     aboutCard1Title: "Goal",
     aboutCard1Text:
@@ -185,5 +189,7 @@ function changeLanguage(lang) {
   }
 }
 
-ptBtn.addEventListener("click", () => changeLanguage("pt"));
-enBtn.addEventListener("click", () => changeLanguage("en"));
+if (ptBtn && enBtn) {
+  ptBtn.addEventListener("click", () => changeLanguage("pt"));
+  enBtn.addEventListener("click", () => changeLanguage("en"));
+}
