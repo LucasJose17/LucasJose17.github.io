@@ -6,7 +6,7 @@ const translations = {
     navProjects: "Projetos",
     navContact: "Contato",
 
-    badge: "Estudando, praticando e evoluindo todos os dias",
+    badge: "Construindo minha jornada na tecnologia",
 
     heroHello: "Olá, eu sou",
     heroRole1: "Estudante de",
@@ -15,7 +15,7 @@ const translations = {
     heroRole4: "Desenvolvedor em formação",
 
     heroDescription:
-      "Sou estudante de Ciência da Computação e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Estou evoluindo na programação, desenvolvimento web e banco de dados para criar soluções digitais reais.",
+      "Sou estudante de Ciência da Computação na UNIPÊ | Centro Universitário de João Pessoa - PB e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Estou evoluindo na programação, desenvolvimento web e banco de dados para criar soluções digitais reais.",
 
     btnProjects: "Ver projetos",
     btnContact: "Entre em contato",
@@ -26,11 +26,6 @@ const translations = {
     infoFocusText: "Manutenção e Suporte em Informática",
     infoGoal: "Foco atual",
     infoGoalText: "Web, lógica e banco de dados",
-
-    metric1: "Período<br />Ciência da Computação",
-    metric2: "Horas de estudo<br />dedicadas",
-    metric3: "Tecnologias<br />exploradas",
-    metric4: "Foco em crescer<br />na área de TI",
 
     aboutLabel: "Sobre mim",
     aboutTitle: "Mais sobre mim",
@@ -89,7 +84,7 @@ const translations = {
     navProjects: "Projects",
     navContact: "Contact",
 
-    badge: "Studying, practicing and improving every day",
+    badge: "Building my journey in technology",
 
     heroHello: "Hi, I am",
     heroRole1: "Student of",
@@ -98,7 +93,7 @@ const translations = {
     heroRole4: "Developer in progress",
 
     heroDescription:
-      "I am a Computer Science student with a 3-year technical background in Computer Maintenance and IT Support. I am improving my programming, web development and database skills to build real digital solutions.",
+      "I am a Computer Science student at UNIPÊ | University Center of João Pessoa - PB with a 3-year technical background in Computer Maintenance and IT Support. I am improving my programming, web development and database skills to build real digital solutions.",
 
     btnProjects: "View projects",
     btnContact: "Contact me",
@@ -109,11 +104,6 @@ const translations = {
     infoFocusText: "Computer Maintenance and IT Support",
     infoGoal: "Current Focus",
     infoGoalText: "Web, logic and databases",
-
-    metric1: "Semester<br />Computer Science",
-    metric2: "Study hours<br />dedicated",
-    metric3: "Technologies<br />explored",
-    metric4: "Focus on growing<br />in IT",
 
     aboutLabel: "About me",
     aboutTitle: "More about me",
@@ -180,12 +170,14 @@ function changeLanguage(lang) {
     }
   });
 
-  if (lang === "pt") {
-    ptBtn.classList.add("active");
-    enBtn.classList.remove("active");
-  } else {
-    enBtn.classList.add("active");
-    ptBtn.classList.remove("active");
+  if (ptBtn && enBtn) {
+    if (lang === "pt") {
+      ptBtn.classList.add("active");
+      enBtn.classList.remove("active");
+    } else {
+      enBtn.classList.add("active");
+      ptBtn.classList.remove("active");
+    }
   }
 }
 
