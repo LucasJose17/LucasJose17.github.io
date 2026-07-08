@@ -4,8 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Lucas José da Silva | Portfólio</title>
+<title>Lucas José da Silva | Desenvolvedor em Formação</title>
 
+<meta
+  name="description"
+  content="Portfólio de Lucas José da Silva, estudante de Ciência da Computação e desenvolvedor em formação."
+/>
   <!-- Ícones -->
   <link
     rel="stylesheet"
@@ -19,7 +23,7 @@
 <body>
   <header class="header">
     <div class="container navbar">
-      <a href="#inicio" class="logo">
+      <a href="index.html" class="logo"> 
         <div class="logo-icon">
           <i class="fa-solid fa-code"></i>
         </div>
@@ -27,18 +31,19 @@
       </a>
 
       <nav class="menu">
-        <a href="#inicio" class="active" data-i18n="navHome">Início</a>
-        <a href="#sobre" data-i18n="navAbout">Sobre</a>
-        <a href="#habilidades" data-i18n="navSkills">Habilidades</a>
-        <a href="#projetos" data-i18n="navProjects">Projetos</a>
-        <a href="#contato" data-i18n="navContact">Contato</a>
-      </nav>
+  <a href="index.html" class="active" data-i18n="navHome">Início</a>
+  <a href="sobre.html" data-i18n="navAbout">Sobre</a>
+  <a href="habilidades.html" data-i18n="navSkills">Habilidades</a>
+  <a href="projetos.html" data-i18n="navProjects">Projetos</a>
+  <a href="contato.html" data-i18n="navContact">Contato</a>
+</nav>
 
       <div class="language-switch">
         <button class="lang-option active" id="ptBtn">PT</button>
         <button class="lang-option" id="enBtn">EN</button>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -48,7 +53,7 @@
         <div class="hero-text">
           <div class="badge">
             <span class="badge-dot"></span>
-            <span data-i18n="badge">Disponível para aprender e evoluir</span>
+            <span data-i18n="badge">Construindo minha jornada na tecnologia</span>
           </div>
 
           <h1>
@@ -62,18 +67,19 @@
             <span data-i18n="heroRole3">Desenvolvedor em formação</span>
           </h2>
 
-          <p data-i18n="heroDescription">
-            Construindo minha trajetória na tecnologia com foco em programação,
-            desenvolvimento web, banco de dados e criação de soluções digitais.
-          </p>
+          <p class="hero-description" data-i18n="heroDescription">
+  Estou desenvolvendo minha base em programação, desenvolvimento web e banco de dados.
+  Meu foco é aprender na prática, criar projetos reais e evoluir como futuro
+  profissional de tecnologia.
+</p>
 
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-primary">
+            <a href="projetos.html" class="btn btn-primary">
               <span data-i18n="btnProjects">Ver projetos</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <a href="#contato" class="btn btn-outline">
+            <a href="contato.html" class="btn btn-outline">
               <span data-i18n="btnContact">Entre em contato</span>
               <i class="fa-regular fa-comment-dots"></i>
             </a>
@@ -150,272 +156,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    
-    <div class="wave-line"></div>
-
-    <!-- MÉTRICAS -->
-    <section class="metrics-section">
-      <div class="container metrics">
-        <div class="metric">
-          <i class="fa-regular fa-book-open"></i>
-          <div>
-            <strong>4º</strong>
-            <span data-i18n="metric1">Período<br />Ciência da Computação</span>
-          </div>
-        </div>
-
-        <div class="metric">
-          <i class="fa-solid fa-code"></i>
-          <div>
-            <strong>100+</strong>
-            <span data-i18n="metric2">Horas de estudo<br />dedicadas</span>
-          </div>
-        </div>
-
-        <div class="metric">
-          <i class="fa-solid fa-terminal"></i>
-          <div>
-            <strong>5+</strong>
-            <span data-i18n="metric3">Tecnologias<br />exploradas</span>
-          </div>
-        </div>
-
-        <div class="metric">
-          <i class="fa-solid fa-rocket"></i>
-          <div>
-            <strong>100%</strong>
-            <span data-i18n="metric4">Foco em crescer<br />na área de TI</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="container">
-        <span class="section-label" data-i18n="aboutLabel">Sobre mim</span>
-        <h2 class="section-title" data-i18n="aboutTitle">Mais sobre mim</h2>
-
-        <p class="section-description" data-i18n="aboutText">
-          Sou estudante de Ciência da Computação e estou desenvolvendo minhas
-          habilidades em programação, lógica, estrutura de dados, banco de dados
-          e desenvolvimento web. Busco evoluir constantemente, praticando com
-          projetos próprios e aprendendo tecnologias usadas no mercado.
-        </p>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <i class="fa-solid fa-bullseye"></i>
-            <div>
-              <h3 data-i18n="aboutCard1Title">Objetivo</h3>
-              <p data-i18n="aboutCard1Text">
-                Conquistar minha primeira oportunidade na área de tecnologia,
-                aplicando meus conhecimentos e aprendendo com profissionais experientes.
-              </p>
-            </div>
-          </div>
-
-          <div class="about-card">
-            <i class="fa-solid fa-brain"></i>
-            <div>
-              <h3 data-i18n="aboutCard2Title">Interesse</h3>
-              <p data-i18n="aboutCard2Text">
-                Desenvolvimento web, sistemas, dados e inteligência artificial.
-                Gosto de aprender na prática e resolver problemas.
-              </p>
-            </div>
-          </div>
-
-          <div class="about-card">
-            <i class="fa-solid fa-chart-line"></i>
-            <div>
-              <h3 data-i18n="aboutCard3Title">Evolução</h3>
-              <p data-i18n="aboutCard3Text">
-                Estou construindo meu portfólio com projetos pessoais e acadêmicos
-                para demonstrar minha evolução como desenvolvedor.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section">
-      <div class="container">
-        <span class="section-label" data-i18n="skillsLabel">Habilidades</span>
-        <h2 class="section-title" data-i18n="skillsTitle">Tecnologias que estou aprendendo</h2>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <i class="fa-brands fa-html5 html"></i>
-            <h3>HTML</h3>
-            <span data-i18n="levelIntermediate">Intermediário</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-brands fa-css3-alt css"></i>
-            <h3>CSS</h3>
-            <span data-i18n="levelIntermediate">Intermediário</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-brands fa-js js"></i>
-            <h3>JavaScript</h3>
-            <span data-i18n="levelBasic">Básico</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-brands fa-python python"></i>
-            <h3>Python</h3>
-            <span data-i18n="levelBasic">Básico</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-brands fa-java java"></i>
-            <h3>Java</h3>
-            <span data-i18n="levelBasic">Básico</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-solid fa-database mysql"></i>
-            <h3>MySQL</h3>
-            <span data-i18n="levelBasic">Básico</span>
-          </div>
-
-          <div class="skill-card">
-            <i class="fa-brands fa-git-alt git"></i>
-            <h3>Git & GitHub</h3>
-            <span data-i18n="levelIntermediate">Intermediário</span>
-          </div>
-        </div>
-
-        <div class="center-button">
-          <a href="#contato" class="btn-small">
-            <i class="fa-solid fa-grip"></i>
-            <span data-i18n="seeAllSkills">Ver todas as habilidades</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="section">
-      <div class="container">
-        <span class="section-label" data-i18n="projectsLabel">Projetos em desenvolvimento</span>
-        <h2 class="section-title" data-i18n="projectsTitle">O que estou construindo</h2>
-
-        <div class="projects-grid">
-          <div class="project-card">
-            <span class="project-number">01</span>
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3 data-i18n="project1Title">Portfólio Pessoal</h3>
-            <p data-i18n="project1Text">
-              Site responsivo para apresentar minha trajetória, habilidades,
-              projetos e contatos.
-            </p>
-
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <span class="project-number">02</span>
-            <i class="fa-solid fa-user-plus"></i>
-            <h3 data-i18n="project2Title">Sistema de Cadastro</h3>
-            <p data-i18n="project2Text">
-              Projeto para praticar formulários, validações e operações de cadastro
-              com banco de dados.
-            </p>
-
-            <div class="project-tags">
-              <span>Java</span>
-              <span>MySQL</span>
-              <span>CRUD</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <span class="project-number">03</span>
-            <i class="fa-solid fa-calculator"></i>
-            <h3 data-i18n="project3Title">Calculadora Web</h3>
-            <p data-i18n="project3Text">
-              Projeto simples para praticar JavaScript, lógica e manipulação
-              de elementos na tela.
-            </p>
-
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <span class="project-number">04</span>
-            <i class="fa-solid fa-code"></i>
-            <h3 data-i18n="project4Title">Estudos de Algoritmos</h3>
-            <p data-i18n="project4Text">
-              Repositório para registrar exercícios, lógica de programação e
-              resolução de problemas.
-            </p>
-
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Java</span>
-              <span>Lógica</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="contact-section">
-      <div class="container contact-box">
-        <div class="contact-icon">
-          <i class="fa-regular fa-paper-plane"></i>
-        </div>
-
-        <div class="contact-text">
-          <h2 data-i18n="contactTitle">Vamos conversar?</h2>
-          <p data-i18n="contactText">
-            Estou aberto a oportunidades de estágio, projetos de estudo,
-            networking e conversas sobre tecnologia.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a
-            href="https://wa.me/5500000000000"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            <span data-i18n="sendMessage">Enviar mensagem</span>
-          </a>
-
-          <a href="https://github.com/LucasJose17" target="_blank" class="social-icon">
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a href="#" target="_blank" class="social-icon">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-
-          <a href="https://www.instagram.com/codandocomlucas" target="_blank" class="social-icon">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a href="mailto:seuemail@email.com" class="social-icon">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
         </div>
       </div>
     </section>

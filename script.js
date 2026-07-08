@@ -6,14 +6,14 @@ const translations = {
     navProjects: "Projetos",
     navContact: "Contato",
 
-    badge: "Disponível para aprender e evoluir",
+    badge: "Estudando, praticando e evoluindo todos os dias",
 
     heroHello: "Olá, eu sou",
     heroRole1: "Estudante de",
     heroRole2: "Ciência da Computação",
     heroRole3: "Desenvolvedor em formação",
     heroDescription:
-      "Construindo minha trajetória na tecnologia com foco em programação, desenvolvimento web, banco de dados e criação de soluções digitais.",
+      "Estou desenvolvendo minha base em programação, desenvolvimento web e banco de dados. Meu foco é aprender na prática, criar projetos reais e evoluir como futuro profissional de tecnologia.",
 
     btnProjects: "Ver projetos",
     btnContact: "Entre em contato",
@@ -33,7 +33,7 @@ const translations = {
     aboutLabel: "Sobre mim",
     aboutTitle: "Mais sobre mim",
     aboutText:
-      "Sou estudante de Ciência da Computação e estou desenvolvendo minhas habilidades em programação, lógica, estrutura de dados, banco de dados e desenvolvimento web. Busco evoluir constantemente, praticando com projetos próprios e aprendendo tecnologias usadas no mercado.",
+      "Sou estudante de Ciência da Computação e estou construindo minha base em programação, lógica, desenvolvimento web e banco de dados. Gosto de aprender na prática, transformar estudos em projetos e evoluir constantemente para conquistar minha primeira oportunidade na área de tecnologia.",
 
     aboutCard1Title: "Objetivo",
     aboutCard1Text:
@@ -54,23 +54,23 @@ const translations = {
     seeAllSkills: "Ver todas as habilidades",
 
     projectsLabel: "Projetos em desenvolvimento",
-    projectsTitle: "O que estou construindo",
+    projectsTitle: "Minha evolução em código",
 
-    project1Title: "Portfólio Pessoal",
+    project1Title: "Meu Primeiro Portfólio",
     project1Text:
-      "Site responsivo para apresentar minha trajetória, habilidades, projetos e contatos.",
+      "Projeto criado para apresentar minha trajetória, habilidades, contatos e evolução como estudante de Ciência da Computação.",
 
-    project2Title: "Sistema de Cadastro",
+    project2Title: "Práticas de Cadastro",
     project2Text:
-      "Projeto para praticar formulários, validações e operações de cadastro com banco de dados.",
+      "Projeto planejado para praticar formulários, validações, lógica de programação e operações básicas de cadastro.",
 
-    project3Title: "Calculadora Web",
+    project3Title: "Desafios com JavaScript",
     project3Text:
-      "Projeto simples para praticar JavaScript, lógica e manipulação de elementos na tela.",
+      "Projetos simples para praticar lógica, interação com a página e manipulação de elementos na tela.",
 
-    project4Title: "Estudos de Algoritmos",
+    project4Title: "Exercícios da Faculdade",
     project4Text:
-      "Repositório para registrar exercícios, lógica de programação e resolução de problemas.",
+      "Repositório para registrar exercícios, lógica de programação, estruturas de repetição, funções e resolução de problemas.",
 
     contactTitle: "Vamos conversar?",
     contactText:
@@ -87,14 +87,14 @@ const translations = {
     navProjects: "Projects",
     navContact: "Contact",
 
-    badge: "Available to learn and grow",
+    badge: "Studying, practicing and improving every day",
 
     heroHello: "Hi, I am",
     heroRole1: "Student of",
     heroRole2: "Computer Science",
     heroRole3: "Developer in progress",
     heroDescription:
-      "Building my path in technology with a focus on programming, web development, databases and digital solutions.",
+      "I am developing my foundation in programming, web development and databases. My focus is to learn by practicing, create real projects and grow as a future technology professional.",
 
     btnProjects: "View projects",
     btnContact: "Contact me",
@@ -114,7 +114,7 @@ const translations = {
     aboutLabel: "About me",
     aboutTitle: "More about me",
     aboutText:
-      "I am a Computer Science student developing my skills in programming, logic, data structures, databases and web development. I aim to keep improving by practicing with personal projects and learning technologies used in the market.",
+      "I am a Computer Science student building my foundation in programming, logic, web development and databases. I like learning by practicing, turning studies into projects and constantly improving to get my first opportunity in technology.",
 
     aboutCard1Title: "Goal",
     aboutCard1Text:
@@ -135,23 +135,23 @@ const translations = {
     seeAllSkills: "View all skills",
 
     projectsLabel: "Projects in development",
-    projectsTitle: "What I am building",
+    projectsTitle: "My growth through code",
 
-    project1Title: "Personal Portfolio",
+    project1Title: "My First Portfolio",
     project1Text:
-      "Responsive website to present my background, skills, projects and contact information.",
+      "Project created to present my background, skills, contacts and growth as a Computer Science student.",
 
-    project2Title: "Registration System",
+    project2Title: "Registration Practice",
     project2Text:
-      "Project to practice forms, validations and registration operations with databases.",
+      "Planned project to practice forms, validations, programming logic and basic registration operations.",
 
-    project3Title: "Web Calculator",
+    project3Title: "JavaScript Challenges",
     project3Text:
-      "Simple project to practice JavaScript, logic and screen element manipulation.",
+      "Simple projects to practice logic, page interaction and screen element manipulation.",
 
-    project4Title: "Algorithm Studies",
+    project4Title: "College Exercises",
     project4Text:
-      "Repository to register exercises, programming logic and problem solving.",
+      "Repository to register exercises, programming logic, loops, functions and problem solving.",
 
     contactTitle: "Let's talk?",
     contactText:
@@ -187,25 +187,3 @@ function changeLanguage(lang) {
 
 ptBtn.addEventListener("click", () => changeLanguage("pt"));
 enBtn.addEventListener("click", () => changeLanguage("en"));
-
-const menuLinks = document.querySelectorAll(".menu a");
-
-window.addEventListener("scroll", () => {
-  let currentSection = "";
-
-  document.querySelectorAll("section[id]").forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-
-    if (window.scrollY >= sectionTop) {
-      currentSection = section.getAttribute("id");
-    }
-  });
-
-  menuLinks.forEach((link) => {
-    link.classList.remove("active");
-
-    if (link.getAttribute("href") === `#${currentSection}`) {
-      link.classList.add("active");
-    }
-  });
-});

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sobre | Lucas José da Silva</title>
+
+  <meta
+    name="description"
+    content="Sobre Lucas José da Silva, estudante de Ciência da Computação e desenvolvedor em formação."
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Codando com Lucas</span>
+      </a>
+
+      <nav class="menu">
+        <a href="index.html" data-i18n="navHome">Início</a>
+        <a href="sobre.html" class="active" data-i18n="navAbout">Sobre</a>
+        <a href="habilidades.html" data-i18n="navSkills">Habilidades</a>
+        <a href="projetos.html" data-i18n="navProjects">Projetos</a>
+        <a href="contato.html" data-i18n="navContact">Contato</a>
+      </nav>
+
+      <div class="language-switch">
+        <button class="lang-option active" id="ptBtn">PT</button>
+        <button class="lang-option" id="enBtn">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="section page-section">
+      <div class="container">
+        <span class="section-label" data-i18n="aboutLabel">Sobre mim</span>
+
+        <h2 class="section-title" data-i18n="aboutTitle">
+          Mais sobre mim
+        </h2>
+
+        <p class="section-description" data-i18n="aboutText">
+  Sou estudante de Ciência da Computação e tenho formação técnica de 3 anos em
+  Manutenção e Suporte em Informática. Essa base me ajudou a entender melhor
+  computadores, sistemas, redes, suporte ao usuário e resolução de problemas.
+  Atualmente estou direcionando meus estudos para programação, desenvolvimento web,
+  banco de dados e criação de soluções digitais.
+</p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <h3 data-i18n="aboutCard1Title">Objetivo</h3>
+              <p data-i18n="aboutCard1Text">
+                Conquistar minha primeira oportunidade na área de tecnologia,
+                aplicando meus conhecimentos e aprendendo com profissionais experientes.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-brain"></i>
+            <div>
+              <h3 data-i18n="aboutCard2Title">Interesse</h3>
+              <p data-i18n="aboutCard2Text">
+                Desenvolvimento web, sistemas, dados e inteligência artificial.
+                Gosto de aprender na prática e resolver problemas.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+              <h3 data-i18n="aboutCard3Title">Evolução</h3>
+              <p data-i18n="aboutCard3Text">
+                Estou construindo meu portfólio com projetos pessoais e acadêmicos
+                para demonstrar minha evolução como desenvolvedor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Lucas José da Silva. Todos os direitos reservados.</p>
+    <p data-i18n="footerText">Feito com dedicação e café ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

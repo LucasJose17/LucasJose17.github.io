@@ -913,63 +913,25 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-/* AJUSTES EXTRAS PARA CELULAR */
+.page-section {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 @media (max-width: 760px) {
-  .hero {
-    padding-top: 45px;
-    padding-bottom: 20px;
-  }
-
-  .hero-content {
-    gap: 20px;
-  }
-
-  .hero-image-area {
+  .page-section {
     min-height: auto;
-    margin-top: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  .photo-card {
-    width: 100%;
-    max-width: 360px;
-    height: 460px;
-    margin: 0 auto;
-  }
-
-  .profile-photo {
-    top: 0;
-    width: 100%;
-    height: 62%;
-    object-fit: cover;
-    object-position: center 28%;
-    transform: translateX(-50%) scale(1.12);
-    border-radius: 34px 34px 18px 18px;
-  }
-
-  .info-card {
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-    padding: 18px;
-  }
-
-  .info-item {
-    gap: 14px;
-  }
-
-  .info-item i {
-    font-size: 22px;
-  }
-
-  .info-item strong {
-    font-size: 16px;
-  }
-
-  .info-item span {
-    font-size: 14px;
-  }
-
-  .social-row {
-    margin-bottom: 20px;
-  }
+}
+.hero-description {
+  max-width: 520px;
+  color: var(--muted);
+  line-height: 1.75;
+  font-size: 16px;
+  margin-bottom: 25px;
 }

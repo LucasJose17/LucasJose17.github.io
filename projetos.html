@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projetos | Lucas José da Silva</title>
+
+  <meta
+    name="description"
+    content="Projetos em desenvolvimento de Lucas José da Silva, estudante de Ciência da Computação."
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Codando com Lucas</span>
+      </a>
+
+      <nav class="menu">
+        <a href="index.html" data-i18n="navHome">Início</a>
+        <a href="sobre.html" data-i18n="navAbout">Sobre</a>
+        <a href="habilidades.html" data-i18n="navSkills">Habilidades</a>
+        <a href="projetos.html" class="active" data-i18n="navProjects">Projetos</a>
+        <a href="contato.html" data-i18n="navContact">Contato</a>
+      </nav>
+
+      <div class="language-switch">
+        <button class="lang-option active" id="ptBtn">PT</button>
+        <button class="lang-option" id="enBtn">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projetos" class="section page-section">
+      <div class="container">
+        <span class="section-label" data-i18n="projectsLabel">Projetos em desenvolvimento</span>
+
+        <h2 class="section-title" data-i18n="projectsTitle">
+          Minha evolução em código
+        </h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <span class="project-number">01</span>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3 data-i18n="project1Title">Meu Primeiro Portfólio</h3>
+            <p data-i18n="project1Text">
+              Projeto criado para apresentar minha trajetória, habilidades,
+              contatos e evolução como estudante de Ciência da Computação.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-number">02</span>
+            <i class="fa-solid fa-user-plus"></i>
+            <h3 data-i18n="project2Title">Práticas de Cadastro</h3>
+            <p data-i18n="project2Text">
+              Projeto planejado para praticar formulários, validações,
+              lógica de programação e operações básicas de cadastro.
+            </p>
+
+            <div class="project-tags">
+              <span>Java</span>
+              <span>MySQL</span>
+              <span>CRUD</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-number">03</span>
+            <i class="fa-solid fa-calculator"></i>
+            <h3 data-i18n="project3Title">Desafios com JavaScript</h3>
+            <p data-i18n="project3Text">
+              Projetos simples para praticar lógica, interação com a página
+              e manipulação de elementos na tela.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-number">04</span>
+            <i class="fa-solid fa-code"></i>
+            <h3 data-i18n="project4Title">Exercícios da Faculdade</h3>
+            <p data-i18n="project4Text">
+              Repositório para registrar exercícios, lógica de programação,
+              estruturas de repetição, funções e resolução de problemas.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Java</span>
+              <span>Lógica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Lucas José da Silva. Todos os direitos reservados.</p>
+    <p data-i18n="footerText">Feito com dedicação e café ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
