@@ -1,24 +1,19 @@
 # Portfólio – Lucas José da Silva
 
-Portfólio pessoal de Lucas José da Silva, estudante de Ciência da Computação na Unipê (João Pessoa – PB) e técnico em Manutenção e Suporte em Informática, em busca de estágio ou vaga júnior em desenvolvimento web.
-
 **Site:** https://lucasjose17.github.io
 
-## Páginas
+Portfólio de Lucas José da Silva, estudante de Ciência da Computação na Unipê (João Pessoa – PB), em busca de estágio ou vaga júnior em desenvolvimento web.
 
-- **Início** – apresentação, formação e link para baixar o currículo
-- **Sobre** – trajetória, objetivo e experiência
-- **Habilidades** – tecnologias que uso nos projetos
-- **Projetos** – San's Pizza, Bendito Sabor e este portfólio
-- **Contato** – WhatsApp, e-mail, LinkedIn e GitHub
+## O que tem no site
 
-O site é bilíngue (português e inglês), com a troca de idioma feita em JavaScript puro, e se adapta a celular, tablet e computador.
+- Apresentação e trajetória, do curso técnico ao desenvolvimento web
+- San's Pizza em destaque, com um diagrama de como o sistema funciona por dentro
+- Prévia ao vivo do Bendito Sabor dentro de um celular
+- Ferramentas e contato
+- Versão em português e inglês
 
-## Tecnologias
+## Como foi feito
 
-HTML, CSS e JavaScript, sem frameworks. Ícones do Font Awesome. Publicado no GitHub Pages.
+HTML, CSS e JavaScript puro, sem frameworks. Fonte Archivo, usando a largura variável como contraste. Publicado no GitHub Pages.
 
-## Contato
-
-- LinkedIn: https://www.linkedin.com/in/lucas-jos%C3%A9-b01bb9332/
-- E-mail: lucassilva005@cs.unipe.edu.br
+As páginas antigas (sobre.html, habilidades.html, projetos.html e contato.html) redirecionam para a seção certa da página única.

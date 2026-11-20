@@ -67,6 +67,14 @@ const en = {
   contactLede:
     "I'm available for an internship or junior role in web development. WhatsApp is the fastest way to reach me.",
 
+  status: "Available for an internship or junior role",
+  archT: "How it works under the hood",
+  arc1: "Customer",
+  arc2: "Counter & kitchen",
+  arc3: "Owner",
+  arcTest: "With automated tests in Vitest and Playwright.",
+  liveCap: "Live preview: scroll and tap the menu.",
+
   foot: "Handmade by Lucas José da Silva, in João Pessoa."
 };
 
