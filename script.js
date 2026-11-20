@@ -1,189 +1,108 @@
-const translations = {
-  pt: {
-    navHome: "Início",
-    navAbout: "Sobre",
-    navSkills: "Habilidades",
-    navProjects: "Projetos",
-    navContact: "Contato",
+// Troca de idioma PT/EN.
+// O texto em português fica no próprio HTML; aqui só existe a versão em inglês.
+const en = {
+  skip: "Skip to content",
+  navProjects: "Projects",
+  navPath: "Path",
+  navContact: "Contact",
 
-    badge: "Construindo minha jornada na tecnologia",
+  hello: "Hi, I'm Lucas José da Silva.",
+  h1a: "From hardware",
+  h1b: "to deploy.",
+  lede:
+    "I started out taking computers apart in technical school. Today I study Computer Science at Unipê and build complete web applications with React, Next.js, TypeScript and databases. I'm looking for my first internship or junior role in software development.",
+  ctaProjects: "See projects",
+  ctaCv: "Download resume (PDF)",
+  place: "João Pessoa, Brazil, where the sun rises first in the Americas.",
 
-    heroHello: "Olá, eu sou",
-    heroRole1: "Estudante de",
-    heroRole2: "Ciência da Computação",
-    heroRole3: "Técnico em Manutenção e Suporte em Informática",
-    heroRole4: "Desenvolvedor web em formação",
+  factCourseT: "Computer Science",
+  factCourseD: "5th semester at Unipê",
+  factTechT: "IT technician",
+  factTechD: "Maintenance and support, 2022–2024",
+  factLangT: "Languages",
+  factLangD: "Portuguese (native), intermediate English and Spanish",
 
-    heroDescription:
-      "Sou estudante de Ciência da Computação na Unipê, em João Pessoa – PB, com formação técnica em Manutenção e Suporte em Informática. Desenvolvo projetos web com React, Node.js, TypeScript e banco de dados, e busco meu primeiro estágio ou vaga júnior em desenvolvimento.",
+  projectsTitle: "What I've built",
+  caseSub:
+    "An ordering system for a pizzeria in Mamanguape, Brazil: customers order from their phones, the team follows orders at the counter and in the kitchen, and the owner runs everything from a dashboard.",
+  flow1T: "Customer",
+  flow1D:
+    "Signs in with just a name and phone number, no password. Browses the menu, places an order, and the address is saved for next time.",
+  flow2T: "Counter and kitchen",
+  flow2D: "Staff sign in with Google and follow orders on the counter and kitchen panel.",
+  flow3T: "Admin",
+  flow3D: "A separate dashboard, only for the owner, to keep track of the pizzeria.",
+  decisionsT: "Technical decisions",
+  dec1: "Supabase database with row-level security (RLS): each user only sees their own data.",
+  dec2: "Data validation with Zod and TypeScript in strict mode.",
+  dec3: "Unit tests with Vitest and end-to-end tests with Playwright, including accessibility checks.",
+  stackT: "Built with",
+  caseNote: "The code is private, but I'm happy to walk through all of it in an interview.",
 
-    btnProjects: "Ver projetos",
-    btnContact: "Entre em contato",
-    downloadCv: "Baixar currículo",
+  bsD: "A digital menu for a restaurant in João Pessoa. Customers build their order at the table and send it straight to the kitchen via WhatsApp.",
+  openSite: "Open the site",
+  seeCode: "View code",
+  pfT: "This portfolio",
+  pfD: "A single bilingual, responsive page written without frameworks and published on GitHub Pages.",
 
-    infoPeriod: "5º período",
-    infoCourse: "Ciência da Computação",
-    infoFocus: "Formação Técnica",
-    infoFocusText: "Manutenção e Suporte em Informática",
-    infoGoal: "Foco atual",
-    infoGoalText: "Desenvolvimento web: React, Node.js e banco de dados",
+  pathTitle: "How I got here",
+  t1T: "IT Maintenance and Support Technician",
+  t1D: "ECIT João da Matta Cavalcanti de Albuquerque. Hardware, networks and operating systems.",
+  t2T: "IT internship",
+  t2D: "Cuité de Mamanguape City Hall. Computer maintenance and support for staff.",
+  t3T: "Computer Science",
+  t3D: "Unipê, in João Pessoa. Focused on programming and web development.",
+  t4T: "Customer support at AeC",
+  t4D: "Helped users of the Mercado Pago app. I learned how people use (and get stuck in) an app.",
+  tNow: "Now",
+  t5T: "Web development",
+  t5D: "Building San's Pizza and looking for my first internship or junior role.",
 
-    aboutLabel: "Sobre mim",
-    aboutTitle: "Mais sobre mim",
-    aboutText:
-      "Sou estudante de Ciência da Computação na Unipê e técnico em Manutenção e Suporte em Informática. Comecei pelo hardware e pelo suporte ao usuário, e hoje meu foco é desenvolvimento web: crio aplicações com React, Next.js, Node.js, TypeScript e banco de dados, sempre colocando em prática o que estudo.",
+  toolsTitle: "Tools",
+  g1: "Front-end",
+  g2: "Back-end and data",
+  g3: "Testing and workflow",
 
-    aboutCard1Title: "Objetivo",
-    aboutCard1Text:
-      "Estágio ou vaga júnior em desenvolvimento web, contribuindo com a equipe e aprendendo com profissionais experientes.",
+  contactTitle: "Let's talk?",
+  contactLede:
+    "I'm available for an internship or junior role in web development. WhatsApp is the fastest way to reach me.",
 
-    aboutCard2Title: "Experiência",
-    aboutCard2Text:
-      "Estágio em manutenção e suporte de TI na Prefeitura de Cuité de Mamanguape e suporte a usuários do aplicativo Mercado Pago na AeC.",
-
-    aboutCard3Title: "Evolução",
-    aboutCard3Text:
-      "Estudo Java, Python, SQL e desenvolvimento web na faculdade e em cursos, e transformo o aprendizado em projetos reais.",
-
-    skillsLabel: "Habilidades",
-    skillsTitle: "Tecnologias que uso nos meus projetos",
-    levelBasic: "Básico",
-    levelIntermediate: "Intermediário",
-    seeAllSkills: "Ver todas as habilidades",
-
-    projectsLabel: "Projetos",
-    projectsTitle: "O que já construí",
-
-    project1Title: "San's Pizza – Sistema de Pedidos",
-    project1Text:
-      "Sistema completo para uma pizzaria de Mamanguape – PB: cardápio e pedidos online, painel da equipe para balcão e cozinha e painel administrativo. Login com Google, banco Supabase com segurança por linha (RLS) e testes automatizados.",
-    project1Note: "Código privado – posso apresentar na entrevista.",
-
-    project2Title: "Bendito Sabor – Cardápio Digital",
-    project2Text:
-      "Cardápio online para um restaurante de João Pessoa: o cliente monta o pedido na mesa, escolhe o pagamento e envia direto para a cozinha pelo WhatsApp. Funciona bem no celular e tem modo escuro.",
-
-    project3Title: "Portfólio Pessoal",
-    project3Text:
-      "Este site: páginas responsivas, tema próprio e troca de idioma entre português e inglês feita em JavaScript puro, publicado no GitHub Pages.",
-
-    seeSite: "Ver site",
-    seeCode: "Ver código",
-
-    contactTitle: "Vamos conversar?",
-    contactText:
-      "Estou em busca de estágio ou vaga júnior em desenvolvimento web. Moro em João Pessoa – PB. Me chame pelo WhatsApp, e-mail ou LinkedIn.",
-    sendMessage: "Enviar mensagem",
-
-    footerText: "Feito com dedicação e café ☕"
-  },
-
-  en: {
-    navHome: "Home",
-    navAbout: "About",
-    navSkills: "Skills",
-    navProjects: "Projects",
-    navContact: "Contact",
-
-    badge: "Building my journey in technology",
-
-    heroHello: "Hi, I am",
-    heroRole1: "Student of",
-    heroRole2: "Computer Science",
-    heroRole3: "Computer Maintenance and IT Support Technician",
-    heroRole4: "Aspiring web developer",
-
-    heroDescription:
-      "I am a Computer Science student at Unipê in João Pessoa, Brazil, with a technical degree in Computer Maintenance and IT Support. I build web projects with React, Node.js, TypeScript and databases, and I am looking for my first internship or junior role in software development.",
-
-    btnProjects: "View projects",
-    btnContact: "Contact me",
-    downloadCv: "Download resume",
-
-    infoPeriod: "5th semester",
-    infoCourse: "Computer Science",
-    infoFocus: "Technical Background",
-    infoFocusText: "Computer Maintenance and IT Support",
-    infoGoal: "Current Focus",
-    infoGoalText: "Web development: React, Node.js and databases",
-
-    aboutLabel: "About me",
-    aboutTitle: "More about me",
-    aboutText:
-      "I am a Computer Science student at Unipê and a Computer Maintenance and IT Support technician. I started with hardware and user support, and today my focus is web development: I build applications with React, Next.js, Node.js, TypeScript and databases, always putting what I learn into practice.",
-
-    aboutCard1Title: "Goal",
-    aboutCard1Text:
-      "An internship or junior role in web development, contributing to the team and learning from experienced professionals.",
-
-    aboutCard2Title: "Experience",
-    aboutCard2Text:
-      "IT maintenance and support internship at the City Hall of Cuité de Mamanguape, and user support for the Mercado Pago app at AeC.",
-
-    aboutCard3Title: "Growth",
-    aboutCard3Text:
-      "I study Java, Python, SQL and web development in college and online courses, and turn what I learn into real projects.",
-
-    skillsLabel: "Skills",
-    skillsTitle: "Technologies I use in my projects",
-    levelBasic: "Basic",
-    levelIntermediate: "Intermediate",
-    seeAllSkills: "View all skills",
-
-    projectsLabel: "Projects",
-    projectsTitle: "What I have built",
-
-    project1Title: "San's Pizza – Ordering System",
-    project1Text:
-      "A complete system for a pizzeria in Mamanguape, Brazil: online menu and ordering, a staff panel for the counter and kitchen, and an admin panel. Google sign-in, Supabase database with row-level security (RLS) and automated tests.",
-    project1Note: "Private code – happy to walk through it in an interview.",
-
-    project2Title: "Bendito Sabor – Digital Menu",
-    project2Text:
-      "An online menu for a restaurant in João Pessoa: customers build their order at the table, choose how to pay and send it straight to the kitchen via WhatsApp. Mobile-friendly with dark mode.",
-
-    project3Title: "Personal Portfolio",
-    project3Text:
-      "This website: responsive pages, a custom theme and a Portuguese/English language switch written in plain JavaScript, published on GitHub Pages.",
-
-    seeSite: "View site",
-    seeCode: "View code",
-
-    contactTitle: "Let's talk?",
-    contactText:
-      "I am looking for an internship or junior role in web development. I live in João Pessoa, Brazil. Reach me on WhatsApp, email or LinkedIn.",
-    sendMessage: "Send message",
-
-    footerText: "Made with dedication and coffee ☕"
-  }
+  foot: "Handmade by Lucas José da Silva, in João Pessoa."
 };
 
 const ptBtn = document.getElementById("ptBtn");
 const enBtn = document.getElementById("enBtn");
+const nodes = document.querySelectorAll("[data-i18n]");
+const pt = {};
 
-function changeLanguage(lang) {
-  document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+nodes.forEach((el) => {
+  pt[el.dataset.i18n] = el.innerHTML;
+});
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.getAttribute("data-i18n");
+function setLanguage(lang) {
+  const dict = lang === "en" ? en : pt;
 
-    if (translations[lang][key]) {
-      element.innerHTML = translations[lang][key];
-    }
+  nodes.forEach((el) => {
+    const text = dict[el.dataset.i18n];
+    if (text) el.innerHTML = text;
   });
 
-  if (ptBtn && enBtn) {
-    if (lang === "pt") {
-      ptBtn.classList.add("active");
-      enBtn.classList.remove("active");
-    } else {
-      enBtn.classList.add("active");
-      ptBtn.classList.remove("active");
-    }
+  document.documentElement.lang = lang === "en" ? "en" : "pt-BR";
+  ptBtn.setAttribute("aria-pressed", String(lang !== "en"));
+  enBtn.setAttribute("aria-pressed", String(lang === "en"));
+
+  try {
+    localStorage.setItem("lang", lang);
+  } catch (e) {
+    /* navegador sem armazenamento: segue sem lembrar a escolha */
   }
 }
 
-if (ptBtn && enBtn) {
-  ptBtn.addEventListener("click", () => changeLanguage("pt"));
-  enBtn.addEventListener("click", () => changeLanguage("en"));
+ptBtn.addEventListener("click", () => setLanguage("pt"));
+enBtn.addEventListener("click", () => setLanguage("en"));
+
+try {
+  if (localStorage.getItem("lang") === "en") setLanguage("en");
+} catch (e) {
+  /* ignora */
 }

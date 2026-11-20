@@ -3,180 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Lucas José da Silva | Desenvolvedor Web em Formação</title>
-
-  <meta
-    name="description"
-    content="Portfólio de Lucas José da Silva, estudante de Ciência da Computação em João Pessoa – PB, em busca de estágio ou vaga júnior em desenvolvimento web."
-  />
-  <meta property="og:title" content="Lucas José da Silva | Desenvolvedor Web em Formação" />
+  <title>Lucas José da Silva · Desenvolvedor web em formação</title>
+  <meta name="description" content="Lucas José da Silva, estudante de Ciência da Computação em João Pessoa – PB. Do hardware ao deploy: busco estágio ou vaga júnior em desenvolvimento web." />
+  <meta name="theme-color" content="#F2F4F7" />
+  <meta property="og:title" content="Lucas José da Silva · Do hardware ao deploy" />
   <meta property="og:description" content="Estudante de Ciência da Computação (Unipê) em busca de estágio ou vaga júnior em desenvolvimento web." />
   <meta property="og:image" content="https://lucasjose17.github.io/foto-lucas.jpg" />
   <meta property="og:type" content="website" />
-
-  <!-- Ícones -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=21" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='18' r='11' fill='%23FFB000'/%3E%3Crect y='18' width='32' height='14' fill='%231259C3'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,100,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=30" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <i class="fa-solid fa-code"></i>
-        </div>
-        <span>Codando com Lucas</span>
-      </a>
+  <a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
-      <nav class="menu">
-        <a href="index.html" class="active" data-i18n="navHome">Início</a>
-        <a href="sobre.html" data-i18n="navAbout">Sobre</a>
-        <a href="habilidades.html" data-i18n="navSkills">Habilidades</a>
-        <a href="projetos.html" data-i18n="navProjects">Projetos</a>
-        <a href="contato.html" data-i18n="navContact">Contato</a>
+  <header class="top">
+    <div class="wrap top-in">
+      <a href="#inicio" class="name">Lucas José</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#projetos" data-i18n="navProjects">Projetos</a>
+        <a href="#trajetoria" data-i18n="navPath">Trajetória</a>
+        <a href="#contato" data-i18n="navContact">Contato</a>
       </nav>
-
-      <div class="language-switch">
-        <button class="lang-option active" id="ptBtn">PT</button>
-        <button class="lang-option" id="enBtn">EN</button>
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" id="ptBtn" aria-pressed="true">PT</button>
+        <button type="button" id="enBtn" aria-pressed="false">EN</button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-content">
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-in">
         <div class="hero-text">
-          <div class="badge">
-            <span class="badge-dot"></span>
-            <span data-i18n="badge">Construindo minha jornada na tecnologia</span>
-          </div>
-
-          <h1>
-            <span data-i18n="heroHello">Olá, eu sou</span>
-            <strong>Lucas José<br />da Silva</strong>
+          <p class="hello" data-i18n="hello">Oi, eu sou o Lucas José da Silva.</p>
+          <h1 class="headline">
+            <span class="hl-1" data-i18n="h1a">Do hardware</span>
+            <span class="hl-2" data-i18n="h1b">ao deploy.</span>
           </h1>
-
-          <h2>
-            <span data-i18n="heroRole1">Estudante de</span>
-            <strong data-i18n="heroRole2">Ciência da Computação</strong><br />
-            <span data-i18n="heroRole3">Técnico em Manutenção e Suporte em Informática</span><br />
-            <span data-i18n="heroRole4">Desenvolvedor web em formação</span>
-          </h2>
-
-          <p class="hero-description" data-i18n="heroDescription">
-            Sou estudante de Ciência da Computação na Unipê, em João Pessoa – PB, com formação técnica
-            em Manutenção e Suporte em Informática. Desenvolvo projetos web com React, Node.js,
-            TypeScript e banco de dados, e busco meu primeiro estágio ou vaga júnior em desenvolvimento.
+          <p class="lede" data-i18n="lede">
+            Comecei abrindo computadores no curso técnico. Hoje curso Ciência da Computação
+            na Unipê e construo aplicações web completas com React, Next.js, TypeScript e banco
+            de dados. Procuro meu primeiro estágio ou vaga júnior em desenvolvimento.
           </p>
-
-          <div class="hero-actions">
-            <a href="projetos.html" class="btn btn-primary">
-              <span data-i18n="btnProjects">Ver projetos</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <a href="contato.html" class="btn btn-outline">
-              <span data-i18n="btnContact">Entre em contato</span>
-              <i class="fa-regular fa-comment-dots"></i>
-            </a>
-          </div>
-
-          <div class="social-row">
-            <a
-              href="https://github.com/LucasJose17"
-              target="_blank"
-              class="social-icon"
-              aria-label="GitHub"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/lucas-jos%C3%A9-b01bb9332/"
-              target="_blank"
-              rel="noopener"
-              class="social-icon"
-              aria-label="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a
-              href="https://www.instagram.com/codandocomlucas"
-              target="_blank"
-              class="social-icon"
-              aria-label="Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="curriculo-lucas-jose-da-silva.pdf" class="download-cv" download>
-              <span class="download-icon">
-                <i class="fa-solid fa-arrow-down"></i>
-              </span>
-              <span data-i18n="downloadCv">Baixar currículo</span>
-            </a>
+          <div class="actions">
+            <a class="btn btn-main" href="#projetos" data-i18n="ctaProjects">Ver projetos</a>
+            <a class="btn btn-line" href="curriculo-lucas-jose-da-silva.pdf" download data-i18n="ctaCv">Baixar currículo (PDF)</a>
           </div>
         </div>
 
-        <div class="hero-image-area">
-          <div class="photo-card">
-            <div class="photo-glow"></div>
+        <figure class="sunrise" aria-label="Foto de Lucas José da Silva">
+          <div class="sky">
+            <div class="sun" aria-hidden="true"></div>
+            <img src="foto-lucas.jpg" alt="Lucas José da Silva" width="960" height="1280" />
+          </div>
+          <div class="sea" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <figcaption data-i18n="place">João Pessoa – PB, onde o sol nasce primeiro nas Américas.</figcaption>
+        </figure>
+      </div>
 
-            <img
-              src="foto-lucas.jpg"
-              alt="Foto de Lucas José da Silva"
-              class="profile-photo"
-            />
+      <div class="wrap facts">
+        <dl>
+          <div>
+            <dt data-i18n="factCourseT">Ciência da Computação</dt>
+            <dd data-i18n="factCourseD">5º período na Unipê</dd>
+          </div>
+          <div>
+            <dt data-i18n="factTechT">Técnico em informática</dt>
+            <dd data-i18n="factTechD">Manutenção e suporte, 2022–2024</dd>
+          </div>
+          <div>
+            <dt data-i18n="factLangT">Idiomas</dt>
+            <dd data-i18n="factLangD">Português nativo, inglês e espanhol intermediários</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
 
-            <div class="info-card">
-              <div class="info-item">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div>
-                  <strong data-i18n="infoPeriod">5º período</strong>
-                  <span data-i18n="infoCourse">Ciência da Computação</span>
-                </div>
+    <!-- PROJETO EM DESTAQUE -->
+    <section class="feature" id="projetos" aria-labelledby="feature-title">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="projectsTitle">O que eu construí</h2>
+
+        <article class="case">
+          <header class="case-head">
+            <h3 id="feature-title" class="case-title">San's Pizza</h3>
+            <p class="case-sub" data-i18n="caseSub">
+              Sistema de pedidos para uma pizzaria de Mamanguape – PB: o cliente pede pelo celular,
+              a equipe acompanha no balcão e na cozinha, e o dono administra tudo num painel.
+            </p>
+          </header>
+
+          <div class="case-body">
+            <div class="flow" aria-label="Como o sistema funciona">
+              <div class="flow-step">
+                <h4 data-i18n="flow1T">Cliente</h4>
+                <p data-i18n="flow1D">Entra só com nome e celular, sem senha. Vê o cardápio, monta o pedido e o endereço fica salvo para a próxima vez.</p>
               </div>
-
-              <div class="info-line"></div>
-
-              <div class="info-item">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <div>
-                  <strong data-i18n="infoFocus">Formação Técnica</strong>
-                  <span data-i18n="infoFocusText">Manutenção e Suporte em Informática</span>
-                </div>
+              <div class="flow-step">
+                <h4 data-i18n="flow2T">Balcão e cozinha</h4>
+                <p data-i18n="flow2D">A equipe entra com a conta Google e acompanha os pedidos no painel do balcão e da cozinha.</p>
               </div>
-
-              <div class="info-line"></div>
-
-              <div class="info-item">
-                <i class="fa-solid fa-code"></i>
-                <div>
-                  <strong data-i18n="infoGoal">Foco atual</strong>
-                  <span data-i18n="infoGoalText">Desenvolvimento web: React, Node.js e banco de dados</span>
-                </div>
+              <div class="flow-step">
+                <h4 data-i18n="flow3T">Administração</h4>
+                <p data-i18n="flow3D">Um painel separado, só para o dono, acompanhar a operação da pizzaria.</p>
               </div>
             </div>
+
+            <div class="case-detail">
+              <h4 data-i18n="decisionsT">Decisões técnicas</h4>
+              <ul class="decisions">
+                <li data-i18n="dec1">Banco no Supabase com segurança por linha (RLS): cada usuário só enxerga os próprios dados.</li>
+                <li data-i18n="dec2">Validação de dados com Zod e TypeScript no modo estrito.</li>
+                <li data-i18n="dec3">Testes unitários com Vitest e de ponta a ponta com Playwright, incluindo checagem de acessibilidade.</li>
+              </ul>
+
+              <h4 data-i18n="stackT">Feito com</h4>
+              <p class="stack">Next.js · React · TypeScript · Tailwind CSS · Supabase · Auth.js · Zod · Vitest · Playwright</p>
+
+              <p class="case-note" data-i18n="caseNote">O código é privado, mas posso mostrar e explicar tudo numa entrevista.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="more">
+          <article class="more-item">
+            <div>
+              <h3>Bendito Sabor</h3>
+              <p data-i18n="bsD">Cardápio digital para um restaurante em João Pessoa. O cliente monta o pedido na mesa e envia direto para a cozinha pelo WhatsApp.</p>
+              <p class="stack">HTML · CSS · JavaScript</p>
+            </div>
+            <div class="more-links">
+              <a href="https://lucasjose17.github.io/bendito-sabor/" target="_blank" rel="noopener" data-i18n="openSite">Abrir o site</a>
+              <a href="https://github.com/LucasJose17/bendito-sabor" target="_blank" rel="noopener" data-i18n="seeCode">Ver código</a>
+            </div>
+          </article>
+
+          <article class="more-item">
+            <div>
+              <h3 data-i18n="pfT">Este portfólio</h3>
+              <p data-i18n="pfD">Página única, bilíngue e responsiva, escrita sem frameworks e publicada no GitHub Pages.</p>
+              <p class="stack">HTML · CSS · JavaScript</p>
+            </div>
+            <div class="more-links">
+              <a href="https://github.com/LucasJose17/LucasJose17.github.io" target="_blank" rel="noopener" data-i18n="seeCode">Ver código</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="path" id="trajetoria" aria-labelledby="path-title">
+      <div class="wrap">
+        <h2 id="path-title" class="section-title" data-i18n="pathTitle">Como cheguei até aqui</h2>
+        <ol class="timeline">
+          <li>
+            <span class="when">2022</span>
+            <h3 data-i18n="t1T">Técnico em Manutenção e Suporte</h3>
+            <p data-i18n="t1D">ECIT João da Matta Cavalcanti de Albuquerque. Hardware, redes e sistemas operacionais.</p>
+          </li>
+          <li>
+            <span class="when">2024</span>
+            <h3 data-i18n="t2T">Estágio em TI</h3>
+            <p data-i18n="t2D">Prefeitura de Cuité de Mamanguape. Manutenção de computadores e suporte aos funcionários.</p>
+          </li>
+          <li>
+            <span class="when">2025</span>
+            <h3 data-i18n="t3T">Ciência da Computação</h3>
+            <p data-i18n="t3D">Unipê, em João Pessoa. Foco em programação e desenvolvimento web.</p>
+          </li>
+          <li>
+            <span class="when">2025</span>
+            <h3 data-i18n="t4T">Suporte ao cliente na AeC</h3>
+            <p data-i18n="t4D">Atendimento a usuários do aplicativo Mercado Pago. Aprendi como as pessoas usam (e travam em) um app.</p>
+          </li>
+          <li class="now">
+            <span class="when" data-i18n="tNow">Agora</span>
+            <h3 data-i18n="t5T">Desenvolvimento web</h3>
+            <p data-i18n="t5D">Construindo o San's Pizza e procurando meu primeiro estágio ou vaga júnior.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FERRAMENTAS -->
+    <section class="tools" aria-labelledby="tools-title">
+      <div class="wrap tools-in">
+        <h2 id="tools-title" class="section-title" data-i18n="toolsTitle">Ferramentas</h2>
+        <div class="tool-groups">
+          <div>
+            <h3 data-i18n="g1">Front-end</h3>
+            <p>React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS</p>
+          </div>
+          <div>
+            <h3 data-i18n="g2">Back-end e dados</h3>
+            <p>Node.js, Supabase, PostgreSQL, MySQL, SQL, Python, Java</p>
+          </div>
+          <div>
+            <h3 data-i18n="g3">Testes e rotina</h3>
+            <p>Vitest, Playwright, Git, GitHub, Linux, Docker</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="contact-title" data-i18n="contactTitle">Vamos conversar?</h2>
+        <p class="contact-lede" data-i18n="contactLede">Estou disponível para estágio ou vaga júnior em desenvolvimento web. O caminho mais rápido é o WhatsApp.</p>
+        <a class="mail" href="mailto:lucassilva005@cs.unipe.edu.br">lucassilva005@cs.unipe.edu.br</a>
+        <ul class="channels">
+          <li><a href="https://wa.me/5583993981232" target="_blank" rel="noopener">WhatsApp (83) 9 9398-1232</a></li>
+          <li><a href="https://www.linkedin.com/in/lucas-jos%C3%A9-b01bb9332/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/LucasJose17" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.instagram.com/codandocomlucas" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="horizon" aria-hidden="true"></div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2026 Lucas José da Silva. Todos os direitos reservados.</p>
-    <p data-i18n="footerText">Feito com dedicação e café ☕</p>
+  <footer class="foot">
+    <div class="wrap">
+      <p data-i18n="foot">Feito à mão por Lucas José da Silva, em João Pessoa.</p>
+    </div>
   </footer>
 
-  <script src="script.js?v=21"></script>
+  <script src="script.js?v=30"></script>
 </body>
 </html>
