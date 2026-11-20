@@ -75,6 +75,10 @@ const en = {
   arcTest: "With automated tests in Vitest and Playwright.",
   liveCap: "Live preview: scroll and tap the menu.",
 
+  studyTitle: "Studying now",
+  studyNote: "Udemy courses in progress, alongside college.",
+  copy: "Copy email",
+
   foot: "Handmade by Lucas José da Silva, in João Pessoa."
 };
 
@@ -113,4 +117,22 @@ try {
   if (localStorage.getItem("lang") === "en") setLanguage("en");
 } catch (e) {
   /* ignora */
+}
+
+// Botão de copiar o e-mail
+const copyBtn = document.getElementById("copyMail");
+
+if (copyBtn) {
+  copyBtn.addEventListener("click", async () => {
+    const isEn = document.documentElement.lang === "en";
+    try {
+      await navigator.clipboard.writeText("lucassilva005@cs.unipe.edu.br");
+      copyBtn.textContent = isEn ? "Email copied" : "E-mail copiado";
+    } catch (e) {
+      copyBtn.textContent = isEn ? "Copy failed, select the email" : "Não deu para copiar, selecione o e-mail";
+    }
+    setTimeout(() => {
+      copyBtn.textContent = isEn ? "Copy email" : "Copiar e-mail";
+    }, 2500);
+  });
 }
