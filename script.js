@@ -12,66 +12,67 @@ const translations = {
     heroRole1: "Estudante de",
     heroRole2: "Ciência da Computação",
     heroRole3: "Técnico em Manutenção e Suporte em Informática",
-    heroRole4: "Desenvolvedor em formação",
+    heroRole4: "Desenvolvedor web em formação",
 
     heroDescription:
-      "Sou estudante de Ciência da Computação na UNIPÊ | Centro Universitário de João Pessoa - PB e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Estou evoluindo na programação, desenvolvimento web e banco de dados para criar soluções digitais reais.",
+      "Sou estudante de Ciência da Computação na Unipê, em João Pessoa – PB, com formação técnica em Manutenção e Suporte em Informática. Desenvolvo projetos web com React, Node.js, TypeScript e banco de dados, e busco meu primeiro estágio ou vaga júnior em desenvolvimento.",
 
     btnProjects: "Ver projetos",
     btnContact: "Entre em contato",
     downloadCv: "Baixar currículo",
 
+    infoPeriod: "5º período",
     infoCourse: "Ciência da Computação",
     infoFocus: "Formação Técnica",
     infoFocusText: "Manutenção e Suporte em Informática",
     infoGoal: "Foco atual",
-    infoGoalText: "Web, lógica e banco de dados",
+    infoGoalText: "Desenvolvimento web: React, Node.js e banco de dados",
 
     aboutLabel: "Sobre mim",
     aboutTitle: "Mais sobre mim",
     aboutText:
-      "Sou estudante de Ciência da Computação e tenho formação técnica de 3 anos em Manutenção e Suporte em Informática. Essa base me ajudou a entender melhor computadores, sistemas, suporte ao usuário e resolução de problemas. Atualmente estou direcionando meus estudos para programação, desenvolvimento web, banco de dados e criação de soluções digitais.",
+      "Sou estudante de Ciência da Computação na Unipê e técnico em Manutenção e Suporte em Informática. Comecei pelo hardware e pelo suporte ao usuário, e hoje meu foco é desenvolvimento web: crio aplicações com React, Next.js, Node.js, TypeScript e banco de dados, sempre colocando em prática o que estudo.",
 
     aboutCard1Title: "Objetivo",
     aboutCard1Text:
-      "Conquistar minha primeira oportunidade na área de tecnologia, aplicando meus conhecimentos e aprendendo com profissionais experientes.",
+      "Estágio ou vaga júnior em desenvolvimento web, contribuindo com a equipe e aprendendo com profissionais experientes.",
 
-    aboutCard2Title: "Interesse",
+    aboutCard2Title: "Experiência",
     aboutCard2Text:
-      "Desenvolvimento web, sistemas, dados e inteligência artificial. Gosto de aprender na prática e resolver problemas.",
+      "Estágio em manutenção e suporte de TI na Prefeitura de Cuité de Mamanguape e suporte a usuários do aplicativo Mercado Pago na AeC.",
 
     aboutCard3Title: "Evolução",
     aboutCard3Text:
-      "Estou construindo meu portfólio com projetos pessoais e acadêmicos para demonstrar minha evolução como desenvolvedor.",
+      "Estudo Java, Python, SQL e desenvolvimento web na faculdade e em cursos, e transformo o aprendizado em projetos reais.",
 
     skillsLabel: "Habilidades",
-    skillsTitle: "Tecnologias que estou aprendendo",
+    skillsTitle: "Tecnologias que uso nos meus projetos",
     levelBasic: "Básico",
     levelIntermediate: "Intermediário",
     seeAllSkills: "Ver todas as habilidades",
 
-    projectsLabel: "Projetos em desenvolvimento",
-    projectsTitle: "Minha evolução em código",
+    projectsLabel: "Projetos",
+    projectsTitle: "O que já construí",
 
-    project1Title: "Meu Primeiro Portfólio",
+    project1Title: "San's Pizza – Sistema de Pedidos",
     project1Text:
-      "Projeto criado para apresentar minha trajetória, habilidades, contatos e evolução como estudante de Ciência da Computação.",
+      "Sistema completo para uma pizzaria de Mamanguape – PB: cardápio e pedidos online, painel da equipe para balcão e cozinha e painel administrativo. Login com Google, banco Supabase com segurança por linha (RLS) e testes automatizados.",
+    project1Note: "Código privado – posso apresentar na entrevista.",
 
-    project2Title: "Práticas de Cadastro",
+    project2Title: "Bendito Sabor – Cardápio Digital",
     project2Text:
-      "Projeto planejado para praticar formulários, validações, lógica de programação e operações básicas de cadastro.",
+      "Cardápio online para um restaurante de João Pessoa: o cliente monta o pedido na mesa, escolhe o pagamento e envia direto para a cozinha pelo WhatsApp. Funciona bem no celular e tem modo escuro.",
 
-    project3Title: "Desafios com JavaScript",
+    project3Title: "Portfólio Pessoal",
     project3Text:
-      "Projetos simples para praticar lógica, interação com a página e manipulação de elementos na tela.",
+      "Este site: páginas responsivas, tema próprio e troca de idioma entre português e inglês feita em JavaScript puro, publicado no GitHub Pages.",
 
-    project4Title: "Exercícios da Faculdade",
-    project4Text:
-      "Repositório para registrar exercícios, lógica de programação, estruturas de repetição, funções e resolução de problemas.",
+    seeSite: "Ver site",
+    seeCode: "Ver código",
 
     contactTitle: "Vamos conversar?",
     contactText:
-      "Estou aberto a oportunidades de estágio, projetos de estudo, networking e conversas sobre tecnologia.",
+      "Estou em busca de estágio ou vaga júnior em desenvolvimento web. Moro em João Pessoa – PB. Me chame pelo WhatsApp, e-mail ou LinkedIn.",
     sendMessage: "Enviar mensagem",
 
     footerText: "Feito com dedicação e café ☕"
@@ -90,66 +91,67 @@ const translations = {
     heroRole1: "Student of",
     heroRole2: "Computer Science",
     heroRole3: "Computer Maintenance and IT Support Technician",
-    heroRole4: "Developer in progress",
+    heroRole4: "Aspiring web developer",
 
     heroDescription:
-      "I am a Computer Science student at UNIPÊ | University Center of João Pessoa - PB with a 3-year technical background in Computer Maintenance and IT Support. I am improving my programming, web development and database skills to build real digital solutions.",
+      "I am a Computer Science student at Unipê in João Pessoa, Brazil, with a technical degree in Computer Maintenance and IT Support. I build web projects with React, Node.js, TypeScript and databases, and I am looking for my first internship or junior role in software development.",
 
     btnProjects: "View projects",
     btnContact: "Contact me",
     downloadCv: "Download resume",
 
+    infoPeriod: "5th semester",
     infoCourse: "Computer Science",
     infoFocus: "Technical Background",
     infoFocusText: "Computer Maintenance and IT Support",
     infoGoal: "Current Focus",
-    infoGoalText: "Web, logic and databases",
+    infoGoalText: "Web development: React, Node.js and databases",
 
     aboutLabel: "About me",
     aboutTitle: "More about me",
     aboutText:
-      "I am a Computer Science student with a 3-year technical background in Computer Maintenance and IT Support. This foundation helped me understand computers, systems, user support and problem solving. I am now focusing my studies on programming, web development, databases and digital solutions.",
+      "I am a Computer Science student at Unipê and a Computer Maintenance and IT Support technician. I started with hardware and user support, and today my focus is web development: I build applications with React, Next.js, Node.js, TypeScript and databases, always putting what I learn into practice.",
 
     aboutCard1Title: "Goal",
     aboutCard1Text:
-      "To get my first opportunity in technology, applying my knowledge and learning from experienced professionals.",
+      "An internship or junior role in web development, contributing to the team and learning from experienced professionals.",
 
-    aboutCard2Title: "Interest",
+    aboutCard2Title: "Experience",
     aboutCard2Text:
-      "Web development, systems, data and artificial intelligence. I enjoy learning by doing and solving problems.",
+      "IT maintenance and support internship at the City Hall of Cuité de Mamanguape, and user support for the Mercado Pago app at AeC.",
 
     aboutCard3Title: "Growth",
     aboutCard3Text:
-      "I am building my portfolio with personal and academic projects to show my progress as a developer.",
+      "I study Java, Python, SQL and web development in college and online courses, and turn what I learn into real projects.",
 
     skillsLabel: "Skills",
-    skillsTitle: "Technologies I am learning",
+    skillsTitle: "Technologies I use in my projects",
     levelBasic: "Basic",
     levelIntermediate: "Intermediate",
     seeAllSkills: "View all skills",
 
-    projectsLabel: "Projects in development",
-    projectsTitle: "My growth through code",
+    projectsLabel: "Projects",
+    projectsTitle: "What I have built",
 
-    project1Title: "My First Portfolio",
+    project1Title: "San's Pizza – Ordering System",
     project1Text:
-      "Project created to present my background, skills, contacts and growth as a Computer Science student.",
+      "A complete system for a pizzeria in Mamanguape, Brazil: online menu and ordering, a staff panel for the counter and kitchen, and an admin panel. Google sign-in, Supabase database with row-level security (RLS) and automated tests.",
+    project1Note: "Private code – happy to walk through it in an interview.",
 
-    project2Title: "Registration Practice",
+    project2Title: "Bendito Sabor – Digital Menu",
     project2Text:
-      "Planned project to practice forms, validations, programming logic and basic registration operations.",
+      "An online menu for a restaurant in João Pessoa: customers build their order at the table, choose how to pay and send it straight to the kitchen via WhatsApp. Mobile-friendly with dark mode.",
 
-    project3Title: "JavaScript Challenges",
+    project3Title: "Personal Portfolio",
     project3Text:
-      "Simple projects to practice logic, page interaction and screen element manipulation.",
+      "This website: responsive pages, a custom theme and a Portuguese/English language switch written in plain JavaScript, published on GitHub Pages.",
 
-    project4Title: "College Exercises",
-    project4Text:
-      "Repository to register exercises, programming logic, loops, functions and problem solving.",
+    seeSite: "View site",
+    seeCode: "View code",
 
     contactTitle: "Let's talk?",
     contactText:
-      "I am open to internship opportunities, study projects, networking and conversations about technology.",
+      "I am looking for an internship or junior role in web development. I live in João Pessoa, Brazil. Reach me on WhatsApp, email or LinkedIn.",
     sendMessage: "Send message",
 
     footerText: "Made with dedication and coffee ☕"

@@ -16,7 +16,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=21" />
 </head>
 
 <body>
@@ -47,20 +47,43 @@
   <main>
     <section id="projetos" class="section page-section">
       <div class="container">
-        <span class="section-label" data-i18n="projectsLabel">Projetos em desenvolvimento</span>
+        <span class="section-label" data-i18n="projectsLabel">Projetos</span>
 
         <h2 class="section-title" data-i18n="projectsTitle">
-          Minha evolução em código
+          O que já construí
         </h2>
 
         <div class="projects-grid">
           <div class="project-card">
             <span class="project-number">01</span>
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3 data-i18n="project1Title">Meu Primeiro Portfólio</h3>
+            <i class="fa-solid fa-pizza-slice"></i>
+            <h3 data-i18n="project1Title">San's Pizza – Sistema de Pedidos</h3>
             <p data-i18n="project1Text">
-              Projeto criado para apresentar minha trajetória, habilidades,
-              contatos e evolução como estudante de Ciência da Computação.
+              Sistema completo para uma pizzaria de Mamanguape – PB: cardápio e pedidos
+              online, painel da equipe para balcão e cozinha e painel administrativo.
+              Login com Google, banco Supabase com segurança por linha (RLS) e testes
+              automatizados.
+            </p>
+
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+              <span>Playwright</span>
+            </div>
+
+            <p class="project-note" data-i18n="project1Note">Código privado – posso apresentar na entrevista.</p>
+          </div>
+
+          <div class="project-card">
+            <span class="project-number">02</span>
+            <i class="fa-solid fa-utensils"></i>
+            <h3 data-i18n="project2Title">Bendito Sabor – Cardápio Digital</h3>
+            <p data-i18n="project2Text">
+              Cardápio online para um restaurante de João Pessoa: o cliente monta o pedido
+              na mesa, escolhe o pagamento e envia direto para a cozinha pelo WhatsApp.
+              Funciona bem no celular e tem modo escuro.
             </p>
 
             <div class="project-tags">
@@ -68,31 +91,22 @@
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
-          </div>
 
-          <div class="project-card">
-            <span class="project-number">02</span>
-            <i class="fa-solid fa-user-plus"></i>
-            <h3 data-i18n="project2Title">Práticas de Cadastro</h3>
-            <p data-i18n="project2Text">
-              Projeto planejado para praticar formulários, validações,
-              lógica de programação e operações básicas de cadastro.
-            </p>
-
-            <div class="project-tags">
-              <span>Java</span>
-              <span>MySQL</span>
-              <span>CRUD</span>
+            <div class="project-links">
+              <a href="bendito-sabor/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="seeSite">Ver site</span>
+              </a>
             </div>
           </div>
 
           <div class="project-card">
             <span class="project-number">03</span>
-            <i class="fa-solid fa-calculator"></i>
-            <h3 data-i18n="project3Title">Desafios com JavaScript</h3>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3 data-i18n="project3Title">Portfólio Pessoal</h3>
             <p data-i18n="project3Text">
-              Projetos simples para praticar lógica, interação com a página
-              e manipulação de elementos na tela.
+              Este site: páginas responsivas, tema próprio e troca de idioma entre
+              português e inglês feita em JavaScript puro, publicado no GitHub Pages.
             </p>
 
             <div class="project-tags">
@@ -100,21 +114,12 @@
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
-          </div>
 
-          <div class="project-card">
-            <span class="project-number">04</span>
-            <i class="fa-solid fa-code"></i>
-            <h3 data-i18n="project4Title">Exercícios da Faculdade</h3>
-            <p data-i18n="project4Text">
-              Repositório para registrar exercícios, lógica de programação,
-              estruturas de repetição, funções e resolução de problemas.
-            </p>
-
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Java</span>
-              <span>Lógica</span>
+            <div class="project-links">
+              <a href="https://github.com/LucasJose17/LucasJose17.github.io" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="seeCode">Ver código</span>
+              </a>
             </div>
           </div>
         </div>
@@ -127,6 +132,6 @@
     <p data-i18n="footerText">Feito com dedicação e café ☕</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=21"></script>
 </body>
 </html>

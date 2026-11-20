@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Restaurante Bendito Sabor – João Pessoa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#2a1215; --muted:#6b5558; --wine:#7a1f2b; --wine-ink:#ffffff;
+  --mustard:#f2b705; --mustard-ink:#2a1215; --line:#e9dcdd; --card:#fbf4f4; --head2:#7a1f2b;
+  --head:"Bricolage Grotesque","Arial Black",Arial,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1b0d0f;--ink:#f7ecec;--muted:#c3aaad;--wine:#a42a3a;--line:#3b2023;--card:#271316;--head2:#f2b705;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#1b0d0f;--ink:#f7ecec;--muted:#c3aaad;--wine:#a42a3a;--line:#3b2023;--card:#271316;--head2:#f2b705;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--body);padding-bottom:90px}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+.hero{
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.09) 50%,transparent 50%) 0 0/48px 48px,
+    linear-gradient(0deg,rgba(255,255,255,.09) 50%,transparent 50%) 0 0/48px 48px,
+    var(--wine);
+  color:var(--wine-ink);padding:48px 0 56px;
+}
+.hero .wrap{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.hero h1{font:800 clamp(3rem,13vw,6.5rem)/.9 var(--head);margin:0 0 18px;letter-spacing:-.03em}
+.hero h1 span{display:block;color:var(--mustard)}
+.hero p{max-width:28em;font-size:1.12rem;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid var(--mustard);cursor:pointer;background:none}
+.btn.main{background:var(--mustard);color:var(--mustard-ink)}
+.btn.alt{color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photos img{width:100%;height:100%;max-height:320px;object-fit:cover;border-radius:14px;border:3px solid #fff;display:block}
+.photos img:nth-child(2){margin-top:28px}
+
+section{padding:52px 0}
+h2{font:800 clamp(1.9rem,6vw,2.7rem)/1.05 var(--head);margin:0 0 8px;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 28px;max-width:36em}
+
+.cat{margin-bottom:30px}
+.cat h3{font:800 1.4rem/1.1 var(--head);margin:0 0 10px;color:var(--head2)}
+.item{display:flex;gap:14px;align-items:center;padding:14px;background:var(--card);border-radius:14px;margin-bottom:10px;border-left:6px solid var(--mustard)}
+.item img{width:84px;height:84px;object-fit:cover;border-radius:10px;flex:none}
+.item .t{flex:1;min-width:0}
+.item b{display:block}
+.item small{display:block;color:var(--muted);line-height:1.35}
+.item .p{font-weight:700;margin-top:4px}
+.qty{display:flex;align-items:center;gap:8px;flex:none}
+.qty button{width:40px;height:40px;border-radius:50%;border:2px solid var(--wine);background:var(--bg);font-weight:800;font-size:1.2rem;cursor:pointer;line-height:1}
+.qty button.plus{background:var(--wine);color:#fff}
+.qty span{min-width:20px;text-align:center;font-weight:700}
+
+.order{background:var(--card)}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:22px;max-width:640px}
+.lines{list-style:none;margin:0 0 14px;padding:0}
+.lines li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.total{display:flex;justify-content:space-between;font:800 1.3rem var(--head);margin-bottom:20px}
+.empty{color:var(--muted)}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input[type=text],input[type=number],textarea{width:100%;padding:12px;border-radius:10px;border:2px solid var(--line);background:var(--bg)}
+.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.pay label{margin:0;display:flex;gap:8px;align-items:center;padding:12px;border:2px solid var(--line);border-radius:10px;font-weight:500;cursor:pointer}
+.pay input{accent-color:var(--wine)}
+.pay label:has(input:checked){border-color:var(--wine);background:var(--card)}
+.hint{color:var(--muted);font-size:.92rem;margin:8px 0 0}
+.send{width:100%;margin-top:22px;border-color:var(--wine);background:var(--wine);color:#fff}
+
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.info h3{font:800 1.1rem var(--head);margin:0 0 6px}
+.info p{margin:0 0 6px;color:var(--muted)}
+.info a{color:var(--ink);font-weight:700}
+footer{padding:20px 0 36px;color:var(--muted);font-size:.9rem;text-align:center}
+
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--wine);color:#fff;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));display:none;z-index:5}
+.bar.on{display:block}
+.bar a{display:flex;justify-content:space-between;align-items:center;max-width:960px;margin:0 auto;text-decoration:none;font-weight:700}
+.bar em{font-style:normal;background:var(--mustard);color:var(--mustard-ink);border-radius:999px;padding:8px 16px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--wine);z-index:11}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--wine);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px}
+.logo{font:800 1.25rem var(--head);text-decoration:none;letter-spacing:-.02em}
+.logo span{color:var(--mustard)}
+.tabs{display:flex;gap:6px}
+.tabs a{text-decoration:none;font-weight:700;padding:8px 14px;border-radius:999px;font-size:.95rem}
+body[data-v="home"] #t-home,body[data-v="pedido"] #t-pedido{background:var(--mustard);color:var(--mustard-ink)}
+body[data-v="pedido"] .v-home,body[data-v="home"] .v-pedido{display:none}
+body[data-v="home"] .bar{display:none!important}
+</style>
+</head>
+<body data-v="home">
+<nav class="nav"><div class="wrap"><a class="logo" href="#inicio">Bendito <span>Sabor</span></a>
+<div class="tabs"><a href="#inicio" id="t-home">Início</a><a href="#pedido" id="t-pedido">Fazer pedido</a></div></div></nav>
+
+<header class="hero v-home" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Bendito <span>Sabor</span></h1>
+      <p>Lanches, pratos e milkshakes feitos na hora, na BR-230, bem pertinho da faculdade. Peça direto da sua mesa.</p>
+      <div class="btns">
+        <a class="btn main" href="#pedido">Fazer pedido</a>
+        <a class="btn alt" href="#visite">Como chegar</a>
+      </div>
+    </div>
+    <div class="photos">
+      <img src="img/prato.jpg" alt="Lasanha e prato com arroz e carne" onerror="this.remove()">
+      <img src="img/hamburguer.jpg" alt="Hambúrguer com pão brioche" onerror="this.remove()">
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="cardapio" class="v-pedido">
+  <div class="wrap">
+    <h2>Cardápio</h2>
+    <p class="lead">Escolha os itens, informe a mesa e envie. Toque em + para adicionar.</p>
+    <div id="menu"></div>
+  </div>
+</section>
+
+<section class="order v-pedido" id="resumo">
+  <div class="wrap">
+    <h2>Seu pedido</h2>
+    <p class="lead">Informe a mesa e a forma de pagamento. O pedido vai para a cozinha pelo WhatsApp.</p>
+    <div class="box">
+      <ul class="lines" id="lines"></ul>
+      <div class="total"><span>Total</span><span id="total">R$ 0,00</span></div>
+
+      <label for="mesa">Número da mesa</label>
+      <input id="mesa" type="number" inputmode="numeric" min="1" placeholder="Ex.: 7">
+
+      <label for="nome">Seu nome</label>
+      <input id="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?">
+
+      <label>Pagamento</label>
+      <div class="pay">
+        <label><input type="radio" name="pg" value="Pix" checked> Pix</label>
+        <label><input type="radio" name="pg" value="Cartão de crédito"> Cartão de crédito</label>
+        <label><input type="radio" name="pg" value="Cartão de débito"> Cartão de débito</label>
+        <label><input type="radio" name="pg" value="Dinheiro"> Dinheiro</label>
+      </div>
+      <p class="hint" id="hint">Enviaremos a chave Pix pelo WhatsApp para você pagar.</p>
+
+      <label for="obs">Observações</label>
+      <textarea id="obs" rows="2" placeholder="Sem cebola, troco para R$ 50…"></textarea>
+
+      <button class="btn send" id="send" disabled>Enviar pedido</button>
+      <p class="hint" id="sendhint">Adicione um item e informe a mesa para enviar.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visite" class="v-home">
+  <div class="wrap">
+    <h2>Venha nos visitar</h2>
+    <p class="lead">Mesas ao ar livre, ao lado da rodovia, em Água Fria.</p>
+    <div class="info">
+      <div>
+        <h3>Endereço</h3>
+        <p>BR-230, Km 22 – Água Fria<br>João Pessoa – PB, 58053-000</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Restaurante+Bendito+Sabor+BR-230+Km+22+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+      </div>
+      <div>
+        <h3>Telefone e WhatsApp</h3>
+        <p><a href="tel:+5583986372225">(83) 98637-2225</a></p>
+        <p><a href="https://wa.me/5583986372225" target="_blank" rel="noopener">Chamar no WhatsApp</a></p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <p>Pergunte pelo WhatsApp os dias e horários de funcionamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Restaurante Bendito Sabor · João Pessoa, PB</div></footer>
+
+<div class="bar" id="bar"><a href="#resumo"><span id="barn">0 itens</span><em id="bart">Ver pedido · R$ 0,00</em></a></div>
+
+<script>
+// WhatsApp que recebe os pedidos (55 + DDD + número, sem espaços).
+var PHONE="5583986372225";
+var IMG1="img/prato.jpg", IMG2="img/hamburguer.jpg";
+// EDITE AQUI: preços (p), nomes (n) e descrições (d) do cardápio. Preços atuais são de exemplo.
+var MENU=[
+ {c:"Lanches",i:[
+  {id:"h1",n:"Hambúrguer da casa",d:"Pão brioche, carne, queijo e creme",p:22,img:IMG2},
+  {id:"h2",n:"Hambúrguer duplo",d:"Duas carnes, para quem está com fome",p:30,img:IMG2},
+  {id:"h3",n:"X-Salada",d:"Carne, queijo e salada",p:18},
+  {id:"h4",n:"X-Bacon",d:"Carne, queijo e bacon",p:20}]},
+ {c:"Pratos",i:[
+  {id:"p1",n:"Lasanha à bolonhesa",d:"Massa, molho de carne e queijo",p:28,img:IMG1},
+  {id:"p2",n:"Prato do dia",d:"Arroz, carne e acompanhamentos",p:25,img:IMG1}]},
+ {c:"Bebidas",i:[
+  {id:"b1",n:"Refrigerante lata",d:"Coca-Cola, Pepsi e outros",p:6},
+  {id:"b2",n:"Refrigerante 600 ml",d:"Guaraná e outros sabores",p:8},
+  {id:"b3",n:"Suco",d:"Pergunte os sabores do dia",p:8},
+  {id:"b4",n:"Água",d:"Com ou sem gás",p:4}]},
+ {c:"Milkshakes",i:[
+  {id:"m1",n:"Milkshake de morango",d:"",p:16},
+  {id:"m2",n:"Milkshake de chocolate",d:"",p:16}]}
+];
+var q={}, all={};
+function R(v){return "R$ "+v.toFixed(2).replace(".",",")}
+function $(id){return document.getElementById(id)}
+var m=$("menu");
+MENU.forEach(function(g){
+  var s=document.createElement("div");s.className="cat";
+  var h="<h3>"+g.c+"</h3>";
+  g.i.forEach(function(x){
+    all[x.id]=x;
+    h+='<div class="item">'+(x.img?'<img src="'+x.img+'" alt="" onerror="this.remove()">':'')+
+      '<div class="t"><b>'+x.n+'</b>'+(x.d?'<small>'+x.d+'</small>':'')+'<div class="p">'+R(x.p)+'</div></div>'+
+      '<div class="qty"><button aria-label="Remover '+x.n+'" data-d="-1" data-id="'+x.id+'">−</button><span id="q-'+x.id+'">0</span>'+
+      '<button class="plus" aria-label="Adicionar '+x.n+'" data-d="1" data-id="'+x.id+'">+</button></div></div>';
+  });
+  s.innerHTML=h;m.appendChild(s);
+});
+m.addEventListener("click",function(e){
+  var b=e.target.closest("button[data-id]");if(!b)return;
+  var id=b.dataset.id;q[id]=Math.max(0,(q[id]||0)+Number(b.dataset.d));upd();
+});
+function upd(){
+  var tot=0,n=0,l="";
+  Object.keys(all).forEach(function(id){
+    var c=q[id]||0;$("q-"+id).textContent=c;
+    if(c){tot+=c*all[id].p;n+=c;l+="<li><span>"+c+"× "+all[id].n+"</span><span>"+R(c*all[id].p)+"</span></li>"}
+  });
+  $("lines").innerHTML=l||'<li class="empty">Nenhum item ainda. Volte ao cardápio e toque em +.</li>';
+  $("total").textContent=R(tot);
+  $("bar").className="bar"+(n?" on":"");
+  $("barn").textContent=n+(n===1?" item":" itens");
+  $("bart").textContent="Ver pedido · "+R(tot);
+  chk();
+}
+function chk(){
+  var hasItem=Object.keys(q).some(function(k){return q[k]>0});
+  var hasMesa=Number($("mesa").value)>0;
+  $("send").disabled=!(hasItem&&hasMesa);
+  $("sendhint").textContent=!hasItem?"Adicione pelo menos um item para enviar.":!hasMesa?"Informe o número da mesa para enviar.":"Vai abrir o WhatsApp com o pedido pronto. Basta tocar em enviar.";
+}
+$("mesa").addEventListener("input",chk);
+var hints={"Pix":"Enviaremos a chave Pix pelo WhatsApp para você pagar.","Cartão de crédito":"Pagamento na maquininha, levada até a sua mesa.","Cartão de débito":"Pagamento na maquininha, levada até a sua mesa.","Dinheiro":"Pagamento em dinheiro na mesa. Avise nas observações se precisar de troco."};
+document.querySelectorAll("input[name=pg]").forEach(function(r){r.addEventListener("change",function(){$("hint").textContent=hints[r.value]})});
+$("send").addEventListener("click",function(){
+  var pg=document.querySelector("input[name=pg]:checked").value,tot=0,t="*Novo pedido – Bendito Sabor*\n*Mesa:* "+$("mesa").value+"\n";
+  if($("nome").value.trim())t+="*Nome:* "+$("nome").value.trim()+"\n";
+  t+="\n";
+  Object.keys(all).forEach(function(id){var c=q[id]||0;if(c){tot+=c*all[id].p;t+=c+"x "+all[id].n+" – "+R(c*all[id].p)+"\n"}});
+  t+="\n*Total:* "+R(tot)+"\n*Pagamento:* "+pg;
+  if($("obs").value.trim())t+="\n*Obs.:* "+$("obs").value.trim();
+  var url="https://wa.me/"+PHONE+"?text="+encodeURIComponent(t);
+  // Se o navegador bloquear a nova aba, abre na mesma aba.
+  var w=window.open(url,"_blank");
+  if(!w)location.href=url;
+});
+upd();
+function route(){
+  var h=location.hash.slice(1);
+  var v=(h==="pedido"||h==="cardapio"||h==="resumo")?"pedido":"home";
+  document.body.setAttribute("data-v",v);
+  var el=(h&&h!=="pedido")?document.getElementById(h):null;
+  if(el)el.scrollIntoView();else window.scrollTo(0,0);
+}
+addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
